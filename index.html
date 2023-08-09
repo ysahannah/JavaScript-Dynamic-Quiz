@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS QUIZ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- quix container -->
+	<div id="demo" style="display: none;">
+
+		<!-- Timer -->
+		<div id="js_timer">
+			<div id="timer">
+				00 : 00
+			</div>
+		</div>
+	
+		<main id="quiz-app">
+			<div class="quiz-container" id="quiz">
+				<header class="top">
+					<div class="title">
+						<h1>JS POP QUIZ</h1>
+					</div>
+				</header>
+				<div class="quiz-header">
+					<h3 id="question">Question Text</h3>
+					<ul>
+						<li>
+							<input type="radio" name="answer" id="a" class="answer">
+							<label for="a" id="a_text">Answer</label>
+						</li>
+
+						<li>
+							<input type="radio" name="answer" id="b" class="answer">
+							<label for="b" id="b_text">Answer</label>
+						</li>
+
+						<li>
+							<input type="radio" name="answer" id="c" class="answer">
+							<label for="c" id="c_text">Answer</label>
+						</li>
+
+						<li>
+							<input type="radio" name="answer" id="d" class="answer">
+							<label for="d" id="d_text">Answer</label>
+						</li>
+					</ul>
+				</div>
+				<button id="submit">SUBMIT</button>
+			</div>
+		</main>
+	</div>
+
+	<div id="demo1"></div>	
+
+	<!-- Toggle Dark/Light Mode -->
+	<div class="dark-light" id="dark-light">
+		<button onclick="darkLightMode()">
+			<img src="pictures/dark-mode.png">
+		</button>
+	</div>
+
+	<!-- start button -->
+	<div class="start_btn" id="start_btn">
+		<button type="button" onclick="document.getElementById('demo').style.display='block'">START</button>
+	</div>
+
+	<!-- javascript code -->
+	<script src="main.js"></script>
+	<script src="script.js"></script>
+	
+	</body>
+</html>
